@@ -1,3 +1,42 @@
-# Assignment 1
+# Assignment 1: Problem Framing 
 
-This is a work in progress for now - 09/03/2025 Grace 
+This is a work in progress - 09/04/2025 Grace 
+
+### Domains 
+1. Misinformation & online trust 
+    - With the rise in social media and AI, a lot of false information has also been dumped onto the internet, with certain demographics like young childen or old people more vunerable to believing false information or scams. It is beneficial to create tools for flagging, verifying, and understanding online content. I learned about the impacts of disinformation, deepfakes, AI-generated content and more through 6.4590 two semesters ago and also close family members of mine have been victims to online scams in the past.  
+2. Patient Records in Healthcare **(Selected Domain 1)**
+    - I fell very ill last semester. As a result, I needed to see a specialist quicky. However, the process of finding a doctor is extremely slow. There were many struggles, but a major obstacle was acquiring all of my health records. For people fequently on the move (ex. college students), they may different records with different hospitals and labs or need multiple diagnostics or tests at multiple locations. The paperwork and records begin pilling up, but because every hospital manages through their own system, it is very difficult to efficiently transfer information and communicate between providers. Personally, I experienced on a lot of phone calls, faxing, scheduling and rescheduling, and repeating tests due to miscommunication. The pipeline of delivery and communication of patient records between providers can be refined.   
+        - **Problem 1 - Slow Pipeline**: The limited availability of doctors and the high amounts of coordination required by insurance providers, doctors' offices, amd the patients themselves, and more results in an extremely slow pipeline for scheduling appointments.   
+        - **Problem 2 - Missing records**: For people constantly on the move, they may have health records in a variety of places and accounts. However, a complete and timely set of records is crucial for diagnosis.   
+        - **Problem 3 - Billing contentions**: There is very little transparency in healthcare for the pricing of services, examinations, and lab works and how these charges are distributed to insurances and what the responsibilities of the patient are. This leads to confusing bills, overcharging, undercharging, and many disputes that take months to years to settle. 
+3. Browsing similar items across multiple websites / retailers 
+    - Online shopping has grown tremendously in popularity over the past years, especially after COVID. Many retailers and brands sell *similar* versions of a product (ex. The brands Nike, Adidas, Lululemon all sell running shorts in slightly different designs). It would be interesting to develop a convenient platform to cross reference across multiple brands and sites. This feature *vaguely* exists, but lacks details. For example, Amazon.com allows you to purchase for a set selection of brands, but it is not exhaustive. If you use the Google search engine to look up running shorts, you may be able to find links to products, but this is also not exhaustive and requires clicking into each website to even find minimal details about the item. Therefore, an interesting area to explore is how to consolidate and display information about similar products across major sites and add features geared towards the consumer who wants to compare instead of the retailers. 
+4. Education / studying 
+    - Although there are a lot of apps and websites for studying (ex. Khan Academy), it would be interesting to add a personal layer to such products. Personalized systems for deep work, balancing study/work/life priorities, and long-term continuous learning can be helpful to people at any stage in life that want to pick up new journeys. 
+5. Language learning **(Selected Domain 2)**
+    - Learning a new language has so much potential to be made interesting beyond traditional learning methods like flashcards, worksheets, exercises etc. This summer I went on a movie marathon and watched many Sci-Fi movies from different countries. This also made me think we could incorporate interesting ways of memorizing new words, learning grammar, etc through some application that could gather media, books, songs of the language learner's interest to make the process more fun. 
+        - **Problem 1 - Boring methods**: Many language learners struggle with the traditional learning methods like flashcards, worksheets, exercises etc.    
+            - **Selected**: I believe this problem can be solved with software elements! Developing and automating new learning techniques is common and strong purpose for software. 
+        - **Problem 2 - Slow process**: Language learning is a slow process that can take months to years to get the basics and even longer to understand the cultural aspects.   
+            - **Rejected**: Speeding up any learning process requires putting in more time or utilizing different learning techniques, so this may be solved simultaneously though problem 1, but directly creating software that speeds up learning is not exactly intuitive or straight forward to implement.  
+        - **Problem 3 - Outdated**: Many phrases and vocabulary taught in older textbooks are outdated as languages are constantly evolving. 
+6. Financial literacy tools
+    - Because of my finance coursework and experience in valuation/derivatives, I see how intimidating investing can be for most people. Current apps either oversimplify (hiding the mechanics) or overwhelm (too much jargon). A project here could bridge that gap — giving users intuitive but accurate tools to model returns, assess risk, and track progress toward goals. It could be especially impactful for young people starting out with investing.
+7. AI usage tracker 
+    - I've noticed that everyone uses AI in different ways. Some use it to draft essays, some use it to formulate emails, etc. It would be interesting to track and study the behaviors of people who use AI. This could be helpful to each individual because it summarizes their patterns and allows them to gain insights on how they could change their practices. 
+8. Waiting in long lines **(Selected Domain 3)**
+    - **Context**: This is a slighty most specific domain compared to the rest, but it stems from recent personal experiences. Everyone hates waiting in long lines. This past summer, I lived in a major city for the first time ever and experienced the tedious process of lining up and waiting hours in the hot sun. In total, I waited in 7 lines for a range of reasons including brand pop-ups, sample sales, gifting events, restaurant grand opening, buying concert tickets, and more and got into 0 events. 
+        - **Problem 1 - Time Costly**: You don't know how long you will be waiting for, or if it is worth the commute to travel to the event. You also don't not know if you will ever get to the end of the line before the event ends / produce sells out. 
+        - **Problem 2 - Maximum uncertainty**: You also don't not know if you will ever get to the end of the line before the event ends / product runs out / what is available / what are the prices.
+        - **Problem 3 - Massive Disruptions**: Massive lines of people that span many blocks cause disruptions for other people who live / work nearby and the neighboring businesses. 
+9. Fashion & personal style 
+    - I find myself spending a lot of time discovering different outfits, looking up new styles and trends, and also trying to visualize what clothing combinations would look like on me. My friends and I frequently cross reference many social media apps in the process like Instagram, TikTok, and Pinterest. Back on the topic of consolidation, there could be ways to consolidate the frequent actions we do when it comes to the clothes we were, ex. looking for a second opinion about an outfit, finding a new piece of clothing, discovering your own style, and more. 
+10. Travel planning / making new friends 
+    - The older I get, the more difficult it has been to coordinate trips with family and friends because everyone has their own schedule, jobs, and responsibilities. Solo-traveling can also be intimidating. An area of further research could be how to build a lightweight tools to plan group trips without endless spreadsheets and chats or meet other fellow travelers who want to go to the same destination at the same time. Frequently, I see travel friends being made through posting on Facebook, so this process can definitely be simplified. 
+
+### Problems 
+1. Waiting in long lines 
+2. Patient Records in Healthcare
+3. Language learning 
+
