@@ -1,12 +1,16 @@
 # Assignment 1: Problem Framing 
 
-This is a work in progress - 09/06/2025 Grace 
 ## Structure Breakdown
-The first section (**Domains and Problems**) details the $10$ domains I selected. For $3$ of the domains, I specifically explain $3$ problems surrounding it. For each problem, I explain why I selected/rejected it. There are $9$ problems total. 
 
-The second section (**Stakeholders**) contains $3-4$ stakeholders per problem with explanations about their impact / how they could be affected. 
+Click any section to jump directly. 
 
-The third section (**Evidence**) contains citations and explanations per problem. 
+The first section ([**Domains and Problems**](#domains-and-problems)) details the $10$ domains I selected. For $3$ of the domains, I specifically explain $3$ problems surrounding it. For each problem, I explain why I selected/rejected it. There are $9$ problems total. 
+
+The second section ([**Stakeholders**](#stakeholders)) contains $3-4$ stakeholders per problem with explanations about their impact / how they could be affected. 
+
+The third section ([**Evidence**](#evidence)) contains citations and explanations per problem. 
+
+The final section ([**Features**](#features)) suggests features of a solution per problem. 
 _________________________________________________________________________________________________
 
 ### Domains and Problems
@@ -114,4 +118,21 @@ ________________________________________________________________________________
     1. This blog shares another key reason for [unpleasant lines](https://verticalledge.com/blogs/news/lessons-from-the-shadows-a-case-study-on-pop-up-failures?srsltid=AfmBOoptOyXARpsvlaiyaTTHX-bM6chyUKgGIs3M0YTtku5hX-yyvwBL): events often suffer from logistical issues, such as overcrowding, stock shortages, or inadequate staffing, can lead to a negative customer experience.
     1. [Solutions to long lines don't necessarily need to be technical](https://www.bizbash.com/event-production-planning/how-do-you-keep-guests-happy-while-waiting-in-line). This article explains how events can keep customers happy in long lines with physical measures.  
     1. For certain event types that require tickets, [online ticket vedors](https://lifehacker.com/best-ticket-sites) become a solution to waiting in long lines. This is a saturated field with many competitors trying to offer the lowest resale prices. 
+
+_________________________________________________________________________________________________
     
+### Features
+Problem: Missing records in healthcare processes
+- *Feature 1*: Automated data reconciliation – The system cross-checks patient records across different databases to detect and flag missing or inconsistent entries, reducing errors for providers and stress for patients.
+- *Feature 2*: Patient-facing record portal – Patients can view and upload their own documents, giving them agency and filling gaps that staff or systems may overlook.
+- *Feature 3*: Real-time alerts for providers – Clinicians receive immediate notifications if critical information (e.g., allergies, lab results) is absent, protecting patient safety.
+
+Problem: Routine methods in language learning
+- *Feature 1*: New learning methods to retain interest - Learners learn through watching movies, listening to music, and more in the desired language instead of traditional voculary flashcards, worksheets, etc.
+- *Feature 2*: Personalized practice generator – Lessons adjust dynamically based on mistakes and progress. Learners are introduced to topics based on their interests.
+- *Feature 3*: Contextual conversation simulations – Learners practice through role-play in real-life scenarios (e.g., ordering food) with other learners, making skills more transferable.
+
+Problem: Maximum uncertainty in waiting in lines
+- *Feature 1*: Real-time queue tracking – Customers see live wait times on an app or display, reducing frustration from unpredictability. 
+- *Feature 2*: Virtual check-in system – People reserve a spot remotely and arrive just-in-time, minimizing wasted hours.
+- *Feature 3*: Competitor benchmarking insights – Businesses compare their wait times to competitors, incentivizing efficiency and improving customer retention.
