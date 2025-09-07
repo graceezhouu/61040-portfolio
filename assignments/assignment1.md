@@ -6,7 +6,7 @@ The first section (**Domains and Problems**) details the $10$ domains I selected
 
 The second section (**Stakeholders**) contains $3-4$ stakeholders per problem with explanations about their impact / how they could be affected. 
 
-The third section (**Evidence**) contains citations and explanations for each problem. 
+The third section (**Evidence**) contains citations and explanations per problem. 
 _________________________________________________________________________________________________
 
 ### Domains and Problems
@@ -80,8 +80,18 @@ ________________________________________________________________________________
     
 ### Evidence
 - Problem: Missing records in healthcare processes  
-    1. [Many](https://www.praxisemr.com/top-ehr-physicians-systems.html) electronic health record systems exist. Data transfer between systems takes much effort time and is tedious. Each has unique features for different needs, but results in inconsistency. 
+    1. [Many electronic health record systems exist.](https://www.praxisemr.com/top-ehr-physicians-systems.html) Data transfer between systems takes much effort time and is tedious. Each has unique features for different needs, but results in inconsistency. 
     2. [Epic (MyChart)](https://isthmus.com/news/news/epic-dominates-the-marketplace/) current dominates online resource management in healthcare services. However, each hospital / medical center that uses MyChart requires a unique account. Accounts can be linked but there are many limitations.  
+    3. UCF Associate Professor Varadraj Gurupurr compares incomplete medical records to a [leaking pipe](https://www.ucf.edu/news/what-happens-if-your-medical-records-are-incomplete/). His previous studies have documented that the biggest reasons for missing health information are communication and education, emphasizing the need for an organized system. 
+    4. This write up by the American Medical Association details all the possible scenarios where patients can lose their records and the [significant barriers](http://ama-assn.org/system/files/2021-02/Patient-access-obtaining-medical-records-from-closed-practices.pdf) to obtaining these. Often times, patients are the last to be notified or not notified at all. 
+    5. The [American Health Information Management Association (AHIMA)](https://www.abramslaw.com/media/announcements/destroyed-medical-records/) has posted guidance on what to do if medical records are destroyed. However, they are limited and provide no guarantees, further emphasizing the need for digital organization. 
+    6. [Huddle health](https://huddle-health.com/missing-medical-record/) is an existing platform patients can use to organize their records. The downside is that it is completely separate from hospital record systems, so users need to be proactive and ensure accuracy. 
+    7. The NIH breaks down the good, bad, and ugly of current electronic medical records. A key highlight is that it requires [constant evolution](https://pmc.ncbi.nlm.nih.gov/articles/PMC7043175/) to meet the needs of doctors and patients to achieve efficieny, and many components are still disconnected. 
+    8. This research article dives deeper into existing issues with these electronic records, specifically related to how they can generate statistically significant [selection bias, informed presence bias, misclassification bias, and more](https://pmc.ncbi.nlm.nih.gov/articles/PMC10938158/). 
+    9. From the perspective of companies that set up electronic health record systems, there are many [hurdles](https://www.officepracticum.com/blog/6-common-challenges-in-ehr-implementation) that need to be overcome in order to achieve a working system, including cost of use, technical ability, privacy concerns, and more. 
+    10. From the perspective of physicians, many are unhappy with existing systems. A key complaint was too [much time is spent keying in data and too little making eye contact with patients](https://www.commonwealthfund.org/blog/2018/electronic-health-record-problem). 
+
+
 - Problem: Routine methods in language learning 
     1. [Language learning enrollment declines over the past 20 years and language teaching programs are feeling the impact.](https://multilingual.com/magazine/november-2024/the-decline-of-language-learning-in-us-higher-education/) This is caused by complex reasons and signifies that change is needed. 
     1. The [benefits](https://pmc.ncbi.nlm.nih.gov/articles/PMC5662126/) of learning multiple languages are highlighted in this research article. However, as learning methods fall behind, this results in missed opportunites for many.  
@@ -97,8 +107,11 @@ ________________________________________________________________________________
     1. This news report from today.com tries to understand the [phenomenon of long lines](https://www.today.com/video/inside-the-growing-phenomenon-of-long-lines-for-viral-sensations-238236229785) in cites. People's motives range from wanting to try a popular slice of pizza to buying a trending tote bag. The reasons are endless, demonstrating how many people experience long lines. 
     1. [Not all people hate a long line](https://www.reddit.com/r/AskNYC/comments/14tc0xg/what_long_lines_are_worth_waiting_for_in_nyc/). This forum gathers many opinions and some reflect that certain places are well worth the wait.  
     1. Pop ups are here to stay due to their [effectiveness as a marketing campaign](https://www.luxury-briefing.com/2019/08/pop-up-spaces-robert-soning/) to introduce new products, collaborate with other brands, on launch exclusive products. However, this also indicates that brands are less incentivized to resolve the problem of long lines since such events are such a success.  
-    1. This forum collected people's experiences on the [longest wait times](https://www.reddit.com/r/rollercoasters/comments/1eztwej/other_what_is_the_longest_you_have_waited_in_line/) they endured at amusement parks and many shared that they had to wait hours, emphasizing how time consuming such events can be. 
     1. [How long are people willing to wait for?](https://www.glossy.co/pop/pop-up-culture-how-far-will-consumers-go-for-free/). Often times, the incentive you receive does not correlate with the long hours spent in line, but the immersive and personal experience of events repeatedly draws people who are willing to wait. 
     1. Aritzia, a popular Canadian clothing brand, allegedly experiences [lines over 1 km](https://dailyhive.com/vancouver/vancouver-aritzia-warehouse-sale-lineup-2025) for their annual warehouse event. This can quickly become an unpleasant experience and emphasizes importance in properly monitoring lines. 
     1. This article reports that many are [unsatisfied](https://cosmeticsbusiness.com/why-booming-beauty-pop-ups-are-letting-consumers-down) such experiences. Long lines result in high expectations that events frequently cannot meet, and therefore result in major letdowns. Attendees reported lack of communication and more crowd management. 
+    1. Another common place to see massive lines is at [sample sales](https://www.gq.com/story/sample-sales-nyc-sensoria), which is where highly coveted brands discount their items for a short amount of time. However, people report overwhelming crowds, staggering queues, and poor selections after the long waiting period. 
     1. This blog shares another key reason for [unpleasant lines](https://verticalledge.com/blogs/news/lessons-from-the-shadows-a-case-study-on-pop-up-failures?srsltid=AfmBOoptOyXARpsvlaiyaTTHX-bM6chyUKgGIs3M0YTtku5hX-yyvwBL): events often suffer from logistical issues, such as overcrowding, stock shortages, or inadequate staffing, can lead to a negative customer experience.
+    1. [Solutions to long lines don't necessarily need to be technical](https://www.bizbash.com/event-production-planning/how-do-you-keep-guests-happy-while-waiting-in-line). This article explains how events can keep customers happy in long lines with physical measures.  
+    1. For certain event types that require tickets, [online ticket vedors](https://lifehacker.com/best-ticket-sites) become a solution to waiting in long lines. This is a saturated field with many competitors trying to offer the lowest resale prices. 
+    
