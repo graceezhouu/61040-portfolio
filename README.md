@@ -15,4 +15,5 @@ Some fun facts about me:
 
 
 # Table of Contents
-[Link to Assignment 1](assignments/assignment1.md)
+[Assignment 1: Problem Framing](assignments/assignment1.md)
+[Problem Set 1: Concept Design - Reading and Writing Concepts](assignments/ps1.md)
