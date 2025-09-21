@@ -1,5 +1,5 @@
 # Problem Set 1: Reading and Writing Concepts
-
+Author: Grace Zhou
 
 ## Exercise 1: Reading a concept
 1. ### Invariants ###

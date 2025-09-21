@@ -17,4 +17,6 @@ Some fun facts about me:
 # Table of Contents
 [Assignment 1: Problem Framing](assignments/assignment1.md)
 
-[Problem Set 1: Concept Design - Reading and Writing Concepts](assignments/ps1.md) (latest work)
+[Problem Set 1: Concept Design - Reading and Writing Concepts](assignments/ps1.md) 
+
+[Problem Set 2: Modular Design - Composing Concepts](assignments/ps2.md) (latest work)
