@@ -163,4 +163,4 @@ This is possible by adding a stronger nonce generator (e.g., random cryptographi
 
 
 - #### Reporting analytics to non-registered creators:
-This would break the ownership model. Either remove `Ownership` restriction (undesirable for privacy) or add an explicit concept for “public analytics.” This is likely undesirable unless requirements demand it.
+This would break the ownership model. Either remove `Ownership` restriction (undesirable for privacy) or add an explicit concept for “public analytics.” This is likely undesirable unless requirements demand it in some tightly constrained situation.
