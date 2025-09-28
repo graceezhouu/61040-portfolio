@@ -1,6 +1,13 @@
 # Assignment 2: Functional Design
 Author: Grace Zhou
 
+## Navigation
+1. [**Problem Statement**](#problem-statement)
+2. [**Application Pitch**](#application-pitch)
+3. [**Concept Design**](#concept-design)
+4. [**UI Sketches**](#ui-sketches)
+5. [**User Journeys**](#user-journeys)
+
 ## Problem Statement
 
 ### Problem Domain: High Demands in Busy Cities result in Long Lines 
@@ -205,7 +212,7 @@ Together, these concepts remain modular: UserReport contributes to PredictionEng
 ## UI Sketches 
 ![UI sketches for line lens app](/assets/ui_sketches.jpeg)
 
-## User Journey(s)
+## User Journeys
 **Scenario 1: Attendee using LineLens to make decision**
 Sarah wants to attend a concert pop-up for her favorite artist but dreads wasting another evening in line, especially since it takes her an hour to get to the venue. She opens LineLens, searches for the event, and immediately sees a red “3+ hour wait” alert. Curious, she clicks in and views live reports from people currently in line, including updates on entry success rates. The app then estimates that the line will close in 45 minutes due to capacity. Realizing that commuting would be a waste of her evening, Sarah decides not to go. Instead, she chooses a restaurant opening she finds through the app and has a much better experience. LineLens helps her avoid frustration, save hours of time, and build trust in the app.
 
