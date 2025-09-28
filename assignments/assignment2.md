@@ -74,11 +74,18 @@ LineLens empowers users to decide whether waiting is worthwhile by providing rea
         - location 
         - estWaitTime
         - estPplInLine
+        - virtualCheckInEligible
         - lastUpdated
 
         
     - **actions**
 
+        createQueue(queueID: String, location: String): QueueID
+
+        **requires** queueID must not already exist in the system
+
+        **effect** creates a new queue with the given ID and location, initializing estWaitTime and estPplInLine to null or values provided, virtualCheckInEligible is set to True the queue was created by an event organizer and they enabled the feature
+        
         updateStatus(queueID: String, estPplInLine: Number): (estWaitTime: Number, lastUpdated: Time)
 
         **requires** queueID must exist aka the event must exist in the system
@@ -113,13 +120,13 @@ LineLens empowers users to decide whether waiting is worthwhile by providing rea
 
        **requires** userID and queueID must exist
 
-       **effect** creates a new UserReport associated with the given queue, timestamped. Information is passed to QueueStatus and PredictionEngine for processing.
+       **effect** creates a new UserReport associated with the given queue, timestamped. Information is passed to  PredictionEngine for processing
     
        validateReport(reportID: String): validity: Boolean
 
        **requires** report must exist.
 
-       **effect** confirms report accuracy by cross-checking with other reports (e.g., consistency with recent entries). Invalid reports may be flagged or excluded.
+       **effect** confirms report accuracy by cross-checking with other reports (e.g., consistency with recent entries). Invalid reports may be flagged or excluded
 
 3. ***PredictionEngine***
 
@@ -154,7 +161,7 @@ LineLens empowers users to decide whether waiting is worthwhile by providing rea
 
     - **concept** VirtualCheckIn
     - **purpose** Allow remote spot reservations for eligible events.
-    - **principle** Minimize wasted time by enabling users to check in virtually and arrive closer to their actual entry time.
+    - **principle** Minimize wasted time by enabling users to check in virtually and arrive closer to their actual entry time instead of waiting in long physical lines
     - **state** 
 
         a set of VirtualCheckIns with:
@@ -169,7 +176,7 @@ LineLens empowers users to decide whether waiting is worthwhile by providing rea
     
         reserveSpot(userID: String, queueID: String): ReservationID
 
-       **requires** userID and queueID must exist; the event must support virtual check-in.
+       **requires** userID and queueID must exist; the event *must* have enabled virtual check-in.
 
        **effect** creates a virtual reservation entry, assigns an arrival window predicted by PredictionEngine
     
@@ -180,34 +187,31 @@ LineLens empowers users to decide whether waiting is worthwhile by providing rea
        **effect** cancels the virtual reservation, freeing capacity for others.
 
 ### Essential Synchronizations 
-1. sync UserReport → PredictionEngine
 
-when a UserReport is validated and accepted
+Here are three essential synchronizations that capture essential design ideas: 
 
-then PredictionEngine.runPrediction(queueID) incorporates the new report to adjust predictionResult.
+1. sync runPrediction (UserReport → PredictionEngine)
 
-2. sync PredictionEngine → QueueStatus
+**when** a UserReport is submitted and then validated
 
-when PredictionEngine finishes runPrediction(queueID) and produces a new predictionResult
+**then** PredictionEngine.runPrediction(queueID) incorporates the new information to adjust predictionResult
 
-then QueueStatus.updateStatus() is called with the predicted estWaitTime so that the status reflects both real-time reports and model-based forecasts.
+2. sync updateStatus (PredictionEngine → QueueStatus)
 
-3. sync PredictionEngine → VirtualCheckIn
+**when** PredictionEngine finishes runPrediction(queueID) and produces a new predictionResult
 
-when PredictionEngine produces a new predictionResult for a queueID with active reservations
+**then** QueueStatus.updateStatus() is called with the predicted estWaitTime so that the status reflects both real-time reports and model-based forecasts
 
-then VirtualCheckIn adjusts arrivalWindow for those reservations if the predicted entry likelihood changes significantly.
+3. sync updateStatus (VirtualCheckIn → QueueStatus)
 
-4. sync VirtualCheckIn → QueueStatus
+**when** a VirtualCheckIn.reserveSpot() action succeeds for a queueID
 
-when a VirtualCheckIn.reserveSpot() action succeeds for a queueID
-
-then QueueStatus.updateStatus() increments estPplInLine to reflect the remote reservation.
+**then** QueueStatus.updateStatus() increments estPplInLine to reflect the remote reservation as well as estWaitTime
 
 ### Brief Notes
 Each concept plays a distinct role, and together they form the backbone of LineLens’s functionality. QueueStatus acts as the central record for line conditions at any event. It aggregates information, ensuring users and businesses alike can see the current state of a queue. UserReport provides the raw, crowd-sourced data that fuels the system. It ensures the app can operate without requiring direct data from venues. PredictionEngine connects past and present, combining historical patterns with live reports to forecast outcomes like wait time and entry likelihood. This provides value not just as raw data, but as actionable insight for users. VirtualCheckIn turns predictions into practical utility by letting users reserve spots and receive tailored arrival windows. It directly reduces wasted time and enhances the user experience.
 
-Together, these concepts remain modular: UserReport contributes to PredictionEngine, and PredictionEngine informs VirtualCheckIn. Ultimately, all information is gathered in QueueStatus. Generic types are instantiated in natural ways: userID always refers to attendees registered in the app, queueID refers to event queues created in QueueStatus, and prediction outputs are bound generically to the queue they describe rather than any user-specific assumptions. This separation ensures each concept is independent but capable of synchronizing through clear, declarative rules.
+Together, these concepts remain modular and all information is gathered in QueueStatus. Generic types are instantiated in natural ways: userID always refers to attendees registered in the app, queueID refers to event queues created in QueueStatus, and prediction outputs are bound generically to the queue they describe rather than any user-specific assumptions. This separation ensures each concept is independent but capable of synchronizing through clear, declarative rules.
 
 ## UI Sketches 
 ![UI sketches for line lens app](/assets/ui_sketches.jpeg)
