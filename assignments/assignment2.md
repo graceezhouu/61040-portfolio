@@ -216,6 +216,8 @@ Together, these concepts remain modular and all information is gathered in Queue
 ## UI Sketches 
 ![UI sketches for line lens app](/assets/ui_sketches.jpeg)
 
+**Important note**: The UI Sketches should not include standard interactions such as User Registration, but specifically, I wanted to add it to mine to highlight the *verification* component. I wanted to demonstrate the concept of a stricter registration process (compared to other apps) since it ties into the constraints for other components, which is that only verified users/events (blue highlight) may post information. ***The registration screen therefore helps the viewer understand where and how *verification* takes place***. The purpose is to attempt to limit inaccurate information on the app.  
+
 ## User Journeys
 **Scenario 1: Attendee using LineLens to make decision**
 
