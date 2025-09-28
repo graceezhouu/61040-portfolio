@@ -178,7 +178,7 @@ LineLens empowers users to decide whether waiting is worthwhile by providing rea
 
        **requires** userID and queueID must exist; the event *must* have enabled virtual check-in.
 
-       **effect** creates a virtual reservation entry, assigns an arrival window predicted by PredictionEngine
+       **effect** creates a virtual reservation entry, assigns an arrival window based on current queue status
     
        cancelSpot(reservationID: String)
 
@@ -218,10 +218,13 @@ Together, these concepts remain modular and all information is gathered in Queue
 
 ## User Journeys
 **Scenario 1: Attendee using LineLens to make decision**
+
 Sarah wants to attend a concert pop-up for her favorite artist but dreads wasting another evening in line, especially since it takes her an hour to get to the venue. She opens LineLens, searches for the event, and immediately sees a red “3+ hour wait” alert. Curious, she clicks in and views live reports from people currently in line, including updates on entry success rates. The app then estimates that the line will close in 45 minutes due to capacity. Realizing that commuting would be a waste of her evening, Sarah decides not to go. Instead, she chooses a restaurant opening she finds through the app and has a much better experience. LineLens helps her avoid frustration, save hours of time, and build trust in the app.
 
 **Scenario 2: Attendee uses LineLens Virtual Check In to attend Coordinated Event**
+
 A makeup brand leverages LineLens to organize their product launch party with the Virtual Check-In feature. Emily, who lives just 15 minutes away, finds the event on LineLens and reserves a spot remotely. She receives a notification to arrive in 40 minutes, but she leaves her house too late and misses her turn. Instead of losing her chance completely, LineLens automatically moves her five stops down in the queue. When she finally arrives, she waits a short time before entering. Although Emily had to wait longer because she was late, the delay was still far shorter and more predictable than standing in a physical line with no information. LineLens made her experience smoother and more flexible.
 
 **Scenario 3: User finds a new event on the street and adds it on LineLens and other users come**
+
 Fred is strolling through SoHo when he notices a matcha cafe setting up an interactive station with a small line forming. He opens LineLens, searches for the event, and when nothing comes up, he creates a new listing with the details he knows: the type of event, its location, and the approximate number of people in line. Later, Sam, a matcha enthusiast, discovers Fred’s post and decides to attend. By the time Sam arrives an hour later, the line has doubled. Still interested, Sam updates the posting by reporting the new line length. Based on his update, LineLens estimates his wait will be 45 minutes. This experience shows how the app empowers users to discover events spontaneously and keep information current for the community.
