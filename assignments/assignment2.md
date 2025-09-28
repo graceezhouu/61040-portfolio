@@ -39,7 +39,7 @@ A real-time transparency app for urban event-goers.
 LineLens empowers users to decide whether waiting is worthwhile by providing real-time queue data and predictive insights with the help of user input so people don't waste time waiting in long lines.
 
 ### Key Features
-1. ***Live Queue Tracking + Predictive Insights***
+1. ***Live Queue Tracking***
 
     - **Explanation:** Crowdsourced updates from attendees already in line. 
     - **Why?** Users can see current wait times and entry likelihood.
@@ -184,7 +184,7 @@ LineLens empowers users to decide whether waiting is worthwhile by providing rea
 
        **requires** reservation must exist and be active
 
-       **effect** cancels the virtual reservation, freeing capacity for others.
+       **effect** cancels the virtual reservation, freeing capacity for others
 
 ### Essential Synchronizations 
 
